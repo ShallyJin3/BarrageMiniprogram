@@ -1,0 +1,18 @@
+<view class="container">
+  <!-- 横向 Tab -->
+  <view class="tab-list">
+    <view 
+      wx:for="{{tabs}}" 
+      wx:key="index" 
+      class="tab-item {{currentTab === index ? 'active' : ''}}"
+      bindtap="switchTab"
+      data-index="{{index}}">
+      {{item}}
+    </view>
+  </view>
+
+  <!-- 内容区域 -->
+  <view class="content">
+    <text class="content-text">{{tabs[currentTab]}}</text>
+  </view>
+</view>

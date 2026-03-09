@@ -1,5 +1,8 @@
 App({
   onLaunch() {
-    console.log('App launched')
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline']
+    });
   }
 })
