@@ -32,11 +32,11 @@
 }
 
 .card {
-  background: linear-gradient(180deg, #8E78FF 0%, #FC7D7B 100%);
-  border-radius: 24rpx;
+  background: linear-gradient(180deg, #D585FF 0%, #00FFEE 100%);
+  border-radius: 25rpx;
   border: none;
-  padding: 0 16rpx;
-  width: 320rpx;
+  padding: 0 12rpx;
+  width: 285rpx;
   flex-shrink: 0;
   overflow: visible;
   transition: all 0.3s ease;
@@ -47,26 +47,26 @@
 }
 
 .card-icon {
-  width: 200rpx;
-  height: 200rpx;
+  width: 193rpx;
+  height: 193rpx;
   display: block;
-  margin: -30rpx auto 0;
+  margin: -25rpx auto 0;
 }
 
 .card-title {
-  font-size: 32rpx;
+  font-size: 28rpx;
   font-weight: bold;
-  color: #ffffff;
-  display: block;
-  text-align: center;
-  margin-top: 10rpx;
-}
-
-.card-desc {
-  font-size: 22rpx;
-  color: #ffffff;
+  color: #333333;
   display: block;
   text-align: center;
   margin-top: 8rpx;
-  padding-bottom: 20rpx;
+}
+
+.card-desc {
+  font-size: 20rpx;
+  color: #333333;
+  display: block;
+  text-align: center;
+  margin-top: 4rpx;
+  padding-bottom: 13rpx;
 }

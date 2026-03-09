@@ -1,0 +1,5 @@
+<view class="fullscreen" style="background-color: {{currentColor}};">
+  <view class="exit-btn" bindtap="goBack">
+    <text class="exit-icon">✕</text>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+.fullscreen-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.fullscreen-text {
+  font-size: 190rpx;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.exit-btn {
+  position: fixed;
+  top: 40rpx;
+  left: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.exit-icon {
+  font-size: 48rpx;
+  color: #ffffff;
+  font-weight: 300;
+}

@@ -1,7 +1,8 @@
 {
   "description": "手持弹幕神器",
   "packOptions": {
-    "ignore": []
+    "ignore": [],
+    "include": []
   },
   "setting": {
     "bundle": false,
@@ -33,11 +34,16 @@
     "minifyWXML": true,
     "showES6CompileOption": false,
     "useCompilerPlugins": false,
-    "ignoreUploadUnusedFiles": true
+    "ignoreUploadUnusedFiles": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
   },
   "compileType": "miniprogram",
-  "libVersion": "3.0.0",
-  "appid": "wx1234567890abcdef",
+  "libVersion": "3.14.3",
+  "appid": "wxfbfa85dca21e567a",
   "projectname": "barrage-app",
   "condition": {},
   "editorSetting": {

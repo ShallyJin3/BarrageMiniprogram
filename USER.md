@@ -1,17 +1,17 @@
 # USER.md - About Your Human
 
-_Learn about the person you're helping. Update this as you go._
-
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+- **Name:** 李思瑾
+- **What to call them:** 思瑾
+- **Pronouns:** 她
+- **Timezone:** Asia/Shanghai
+- **Notes:** 
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- 有一个小程序项目 `BarrageMiniprogram`（弹幕小程序）
+- 还有一个网页项目 `QuickView-link`
+- 需要经常帮忙推代码到 GitHub
 
 ---
 
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+*持续了解中...*

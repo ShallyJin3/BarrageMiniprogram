@@ -1,0 +1,21 @@
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.exit-btn {
+  position: fixed;
+  top: 40rpx;
+  left: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.exit-icon {
+  font-size: 48rpx;
+  color: #ffffff;
+  font-weight: 300;
+}

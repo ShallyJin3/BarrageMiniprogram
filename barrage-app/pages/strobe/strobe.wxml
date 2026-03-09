@@ -1,0 +1,4 @@
+<!-- pages/strobe/strobe.wxml -->
+<view class="container {{isWhite ? 'white' : 'black'}}">
+ 
+</view>

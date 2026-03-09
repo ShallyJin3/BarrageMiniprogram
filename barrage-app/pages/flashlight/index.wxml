@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="style-list">
+    <view class="style-item" bindtap="goToStyle1">
+      <text class="style-name">风格一</text>
+      <view class="color-preview">
+        <view class="color-dot" style="background-color: #FF0000;"></view>
+        <view class="color-dot" style="background-color: #FFFF00;"></view>
+        <view class="color-dot" style="background-color: #0000FF;"></view>
+      </view>
+    </view>
+    <view class="style-item" bindtap="goToStyle2">
+      <text class="style-name">风格二</text>
+      <view class="color-preview">
+        <view class="color-dot" style="background-color: #FF0080;"></view>
+        <view class="color-dot" style="background-color: #000000;"></view>
+        <view class="color-dot" style="background-color: #FFFF00;"></view>
+      </view>
+    </view>
+    <view class="style-item" bindtap="goToStyle3">
+      <text class="style-name">风格三</text>
+      <view class="color-preview">
+        <view class="color-dot" style="background-color: #8b0000;"></view>
+        <view class="color-dot" style="background-color: #009900;"></view>
+        <view class="color-dot" style="background-color: #000099;"></view>
+      </view>
+    </view>
+  </view>
+</view>

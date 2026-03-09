@@ -2,16 +2,26 @@ Page({
   data: {},
 
   goToBarrage() {
-    wx.showToast({
-      title: '即将上线！',
-      icon: 'none'
+    wx.navigateTo({
+      url: '/pages/barrage/index'
     });
   },
 
   goToStrobe() {
-    wx.showToast({
-      title: '即将上线！',
-      icon: 'none'
+    wx.navigateTo({
+      url: '/pages/strobe/strobe'
+    });
+  },
+
+  goToConfession() {
+    wx.navigateTo({
+      url: '/pages/confession/index'
+    });
+  },
+
+  goToFlashlight() {
+    wx.navigateTo({
+      url: '/pages/flashlight/index'
     });
   }
-})
+});

@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/list/list",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/strobe/strobe"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -20,10 +20,6 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页"
-      },
-      {
-        "pagePath": "pages/list/list",
-        "text": "列表"
       },
       {
         "pagePath": "pages/mine/mine",

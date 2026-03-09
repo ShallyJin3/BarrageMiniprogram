@@ -1,0 +1,11 @@
+<!-- 全屏预览页面 -->
+<view class="fullscreen-container" style="background-color: {{bgColor}};">
+  <view class="barrage-scroll" style="animation-duration: {{11 - scrollSpeed}}s;">
+    <text class="barrage-text" style="color: {{textColor}};">{{barrageText}}</text>
+  </view>
+  
+  <!-- 退出全屏按钮 -->
+  <view class="exit-btn" bindtap="goBack">
+    <text class="exit-icon">✕</text>
+  </view>
+</view>

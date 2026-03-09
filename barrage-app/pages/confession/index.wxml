@@ -1,0 +1,72 @@
+<view class="container">
+  <!-- 灯牌展示区域 -->
+  <view class="light-display" style="background-color: {{bgColor}};" bindtap="navigateToFullscreen">
+    <!-- 静态文字 -->
+    <text class="light-text" style="color: {{textColor}};">{{displayText}}</text>
+    <!-- 全屏提示 -->
+    <view class="fullscreen-hint">点击全屏展示</view>
+  </view>
+
+  <!-- 输入区域 -->
+  <view class="input-container">
+    <view class="input-wrapper" bindtap="focusInput">
+      <input 
+        class="barrage-input" 
+        placeholder="请输入展示文字（最多6字）..." 
+        placeholder-class="placeholder"
+        bindinput="onInput"
+        focus="{{inputFocus}}"
+        maxlength="6"
+      />
+    </view>
+  </view>
+  
+  <!-- 字数提示 -->
+  <view class="char-count">{{displayText.length}}/6</view>
+
+  <!-- 遮罩层 -->
+  <view class="picker-mask" wx:if="{{showTextColorPicker || showBgColorPicker}}" bindtap="closePickers"></view>
+
+  <!-- 文字颜色调色板 -->
+  <view class="color-picker-float" wx:if="{{showTextColorPicker}}">
+    <view 
+      wx:for="{{colorList}}" 
+      wx:key="index"
+      class="color-option"
+      style="background-color: {{item}};"
+      bindtap="selectTextColor"
+      data-color="{{item}}"
+    />
+  </view>
+
+  <!-- 背景颜色调色板 -->
+  <view class="color-picker-float" wx:if="{{showBgColorPicker}}">
+    <view 
+      wx:for="{{bgColorList}}" 
+      wx:key="index"
+      class="color-option"
+      style="background-color: {{item}};"
+      bindtap="selectBgColor"
+      data-color="{{item}}"
+    />
+  </view>
+
+  <!-- 设置模块区域 -->
+  <view class="color-settings">
+    <!-- 文字颜色 -->
+    <view class="color-section">
+      <view class="color-btn" bindtap="showTextColorPicker">
+        <text class="color-label">文字颜色</text>
+        <view class="color-preview" style="background-color: {{textColor}};"></view>
+      </view>
+    </view>
+
+    <!-- 背景颜色 -->
+    <view class="color-section">
+      <view class="color-btn" bindtap="showBgColorPicker">
+        <text class="color-label">背景颜色</text>
+        <view class="color-preview" style="background-color: {{bgColor}};"></view>
+      </view>
+    </view>
+  </view>
+</view>

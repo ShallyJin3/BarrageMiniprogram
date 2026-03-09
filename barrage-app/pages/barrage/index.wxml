@@ -1,0 +1,96 @@
+<view class="container">
+  <!-- 黑色预览区域 -->
+  <view class="barrage-display" style="background-color: {{bgColor}};" bindtap="navigateToFullscreen">
+    <view class="barrage-scroll" style="animation-duration: {{11 - scrollSpeed}}s;">
+      <text class="barrage-text" style="color: {{textColor}};">{{barrageText}}</text>
+    </view>
+    <!-- 全屏提示 -->
+    <view class="fullscreen-hint">点击全屏展示</view>
+  </view>
+  
+  <!-- 输入框区域 -->
+  <view class="input-container">
+    <view class="input-wrapper" bindtap="focusInput">
+      <input 
+        class="barrage-input" 
+        placeholder="请输入滚动弹幕文字..." 
+        placeholder-class="placeholder"
+        bindinput="onInput"
+        focus="{{inputFocus}}"
+      />
+    </view>
+  </view>
+  
+  <!-- 遮罩层 -->
+  <view class="picker-mask" wx:if="{{showTextColorPicker || showBgColorPicker || showSpeedPicker}}" bindtap="closePickers"></view>
+  
+  <!-- 文字颜色调色板 -->
+  <view class="color-picker-float" wx:if="{{showTextColorPicker}}">
+    <view 
+      wx:for="{{colorList}}" 
+      wx:key="index"
+      class="color-option"
+      style="background-color: {{item}};"
+      bindtap="selectTextColor"
+      data-color="{{item}}"
+    />
+  </view>
+  
+  <!-- 背景颜色调色板 -->
+  <view class="color-picker-float" wx:if="{{showBgColorPicker}}">
+    <view 
+      wx:for="{{bgColorList}}" 
+      wx:key="index"
+      class="color-option"
+      style="background-color: {{item}};"
+      bindtap="selectBgColor"
+      data-color="{{item}}"
+    />
+  </view>
+  
+  <!-- 速度设置浮窗 -->
+  <view class="color-picker-float" wx:if="{{showSpeedPicker}}">
+    <view class="speed-display">{{scrollSpeed}}倍速</view>
+    <slider 
+      class="speed-slider"
+      min="1" 
+      max="10" 
+      value="{{scrollSpeed}}" 
+      bindchange="onSpeedChange"
+      activeColor="#D585FF"
+      block-color="#D585FF"
+      block-size="24"
+    />
+    <view class="speed-labels">
+      <text>1x</text>
+      <text>10x</text>
+    </view>
+  </view>
+  
+  <!-- 设置模块区域 -->
+  <view class="color-settings">
+    <!-- 文字颜色 -->
+    <view class="color-section">
+      <view class="color-btn" bindtap="showTextColorPicker">
+        <text class="color-label">文字颜色</text>
+        <view class="color-preview" style="background-color: {{textColor}};"></view>
+      </view>
+    </view>
+    
+    <!-- 背景颜色 -->
+    <view class="color-section">
+      <view class="color-btn" bindtap="showBgColorPicker">
+        <text class="color-label">背景颜色</text>
+        <view class="color-preview" style="background-color: {{bgColor}};"></view>
+      </view>
+    </view>
+    
+    <!-- 滚动速度 -->
+    <view class="color-section">
+      <view class="color-btn" bindtap="showSpeedPicker">
+        <text class="color-label">滚动速度</text>
+        <view class="speed-preview">{{scrollSpeed}}x</view>
+      </view>
+    </view>
+  </view>
+</view>

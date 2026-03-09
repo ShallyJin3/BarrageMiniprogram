@@ -1,0 +1,37 @@
+.container {
+  padding: 30rpx;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.style-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.style-item {
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.style-name {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.color-preview {
+  display: flex;
+  gap: 12rpx;
+}
+
+.color-dot {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  border: 2rpx solid #eee;
+}

@@ -1,5 +1,11 @@
 Page({
   data: {},
 
-  onLoad() {}
-})
+  onLoad() {},
+
+  goToContact() {
+    wx.navigateTo({
+      url: '/pages/contact/contact'
+    });
+  }
+});
